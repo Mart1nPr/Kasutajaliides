@@ -1,12 +1,50 @@
+/*Body*/
 body {
-    background-color: rgb(33, 222, 58);
+    background-image: url(/backgound-image/BackgroundImage.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+    margin: 0; 
 }
 
-h1 {
-    padding-left: 10px;
-    padding-top: 10px;
+/*Main*/
+.Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    height: auto;
+    max-width: 800px;
+    min-height: 500px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.About-us {
-    padding-left: 10px;
+h1.startText {
+    text-align: center;
+    font-size: 70px;
+}
+
+.iText {
+    font-size: 30px;
+}
+
+button.start {
+    background-color: #0078D7;
+    border: solid #0078D7;
+    color: white;
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    font-size: 25px;
+} 
+
+button.start:hover {
+    background-color: #046fc6;
 }
