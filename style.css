@@ -28,11 +28,10 @@ body {
 
 h1.startText {
     text-align: center;
-    font-size: 70px;
 }
 
 .iText {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 button.start {
@@ -42,7 +41,7 @@ button.start {
     margin-top: 20px;
     height: 50px;
     width: 200px;
-    font-size: 25px;
+    font-size: 20px;
 } 
 
 button.start:hover {
