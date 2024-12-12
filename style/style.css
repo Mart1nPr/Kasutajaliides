@@ -1,11 +1,17 @@
-/*Body*/
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+/*Body Background*/
 body {
     background-image: url(/images/BackgroundImage.jpg);
     background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 100vh; 
-    margin: 0; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*Main*/
@@ -14,26 +20,28 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    height: auto;
-    max-width: 800px;
-    min-height: 500px;
+    width: 800px; 
+    height: 400px; 
+    margin: auto;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 15%;
+    transform: translateY(-50%); 
 }
 
+
+/*Heading and text*/
 h1.startText {
     text-align: center;
 }
 
 .iText {
     font-size: 20px;
+    text-align: center;
 }
 
+/*Button*/
 button.start {
     background-color: #0078D7;
     border: solid #0078D7;
@@ -42,8 +50,16 @@ button.start {
     height: 50px;
     width: 200px;
     font-size: 20px;
-} 
+    cursor: pointer;
+}
 
 button.start:hover {
     background-color: #046fc6;
+}
+
+/* Footer */
+.footer {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
 }
