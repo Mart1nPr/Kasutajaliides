@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- dokumendi tüüp on html -->
-<html lang="et">
+<html lang="en">
 <!-- määrame ära, mis keelega tegu, siis brauser teab -->
 
 <head>
@@ -14,27 +14,48 @@
 	Seejärel kirjuta kujunduse järgi markup kood. 
 	-->
 	<style>
-		p a {}
-
-		a {}
-
-		a span {}
-
-		.container {
-			max-width: 1320px;
-			margin: 0 auto;
+		/*Body style*/
+		body {
+			overflow: scroll;
 		}
 
-
+		/*header style*/
 		.header {
-			background-image: url(/images/9aqY27bo-6XmDjMJjh5-\(edit\).jpg);
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			background-image: url('/images/9aqY27bo-6XmDjMJjh5-\(edit\).jpg');
+			background-size: cover;
+			background-position: center;
 			height: 400px;
 			width: 100%;
 		}
 
-		.web-tab {
-			color: black;
+		.logo {
+			height: 50px;
+			width: auto;
+			padding-top: 40px;
 		}
+
+		.web-tabs {
+			display: flex;
+			gap: 15px;
+			padding-top: 40px;
+			padding-right: 40px;
+		}
+
+		.web-tab {
+			font-family: Arial, Helvetica, sans-serif;
+			color: white;
+			font-size: 20px;
+			text-decoration: none;
+		}
+
+
+		/*main style*/
+
+
+
 
 		/* https://developer.mozilla.org/en-US/docs/Web/CSS/color */
 		/* https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration */
@@ -45,56 +66,50 @@
 </head>
 
 <body>
-	<div class="Main-container">
-		<div class="header">
-			<div class="web-tabs">
-				<a class="web-tab" href="">Avaleht</a>
-				<a class="web-tab" href="">Teenused</a>
-				<a class="web-tab" href="">Galerii</a>
-				<a class="web-tab" href="">Küsi hinnapakkumist</a>
-				<a class="web-tab" href="">Töö pakkumised</a>
-			</div>
+	<div class="header">
+		<img class="logo" src="images/bimmermotorslogotype-gray.png" alt="logo">
+		<div class="web-tabs">
+			<a class="web-tab" href="">Esileht</a>
+			<a class="web-tab" href="">Teenused</a>
+			<a class="web-tab" href="">Galerii</a>
+			<a class="web-tab" href="">Küsi hinnapakkumist</a>
+			<a class="web-tab" href="">Töö pakkumised</a>
 		</div>
 	</div>
-	<br>
-	<div class="Middle-container">
-		<!--information-->
-		<div class="information-container">
-			<div>
-				<h1>Bimmer Motors on BMW AG sõltumatu spetsialist</h1>
-				<p class="info-text">
-					Pakume BMW / Mini sõidukite ja BMW mootorrataste hooldus- ja remonditeenust ning originaal
-					lisavarustuse
-					paigaldust.
 
-					Meie meeskonnaliikmete enam kui kümne aasta pikkune kindlale margile spetsialiseerumine annab meile
-					julguse väita, et oleme BMW spetsialistid ning saame oma teadmiste ja kogemustega olla Sulle
-					usaldusväärne partner. Oleme läbinud BMW AG koolitused ning omame sellekohaseid sertifikaate.
-					Teostame
-					hooldust ja remonti vastavalt BMW tehase nõuetele. Oma töös kasutame BMW originaal tarkvara ja
-					tööriistu
-					ning kõik meie teostatud hooldused kajastuvad BMW tehaseprogrammis.
+	<div class="main">
+		<div class="info-box">
+			<h1>Bimmer Motors on BMW AG sõltumatu spetsialist</h1>
+			<p class="info-text">
+				Pakume BMW / Mini sõidukite ja BMW mootorrataste hooldus- ja remonditeenust ning originaal
+				lisavarustuse
+				paigaldust.
 
-					Bimmer Motorsi loomise eesmärk oli viia BMW / Mini sõidukite teenindus ja autohoolduse kvaliteet
-					uuele
-					tasemele ning pakkuda kliendile erinevaid võimalusi oma auto isikupärasemaks muutmisel. Meie
-					missiooniks
-					on pakkuda kliendile maksimaalset rahulolu – tulihingeliste BMW austajatena pakume oma kliendile
-					teenust
-					nii nagu me sooviksime, et seda meile endile osutataks. 
-				</p>
-			</div>
-			<br>
-			<!--2 selection buttons-->
+				Meie meeskonnaliikmete enam kui kümne aasta pikkune kindlale margile spetsialiseerumine annab meile
+				julguse väita, et oleme BMW spetsialistid ning saame oma teadmiste ja kogemustega olla Sulle
+				usaldusväärne partner. Oleme läbinud BMW AG koolitused ning omame sellekohaseid sertifikaate.
+				Teostame
+				hooldust ja remonti vastavalt BMW tehase nõuetele. Oma töös kasutame BMW originaal tarkvara ja
+				tööriistu
+				ning kõik meie teostatud hooldused kajastuvad BMW tehaseprogrammis.
+
+				Bimmer Motorsi loomise eesmärk oli viia BMW / Mini sõidukite teenindus ja autohoolduse kvaliteet
+				uuele
+				tasemele ning pakkuda kliendile erinevaid võimalusi oma auto isikupärasemaks muutmisel. Meie
+				missiooniks
+				on pakkuda kliendile maksimaalset rahulolu tulihingeliste BMW austajatena pakume oma kliendile
+				teenust
+				nii nagu me sooviksime, et seda meile endile osutataks.
+			</p>
+
 			<div>
 				<button>Teenused</button>
 				<button>Küsi hinnapakkumist</button>
 			</div>
-			<br>
-			<!--client area-->
+
 			<div>
 				<h2>Liitu meiega</h2>
-				<p>
+				<p class="info-text">
 					Meil on hea meel teatada, et bimmer24.ee pakub oma klientidele fantastilist soodustust! Liituge meie
 					kliendiprogrammiga ja võtke osa erilisest sooduskampaaniast, mis aitab teil säästa auto hoolduse
 					pealt.
@@ -103,11 +118,11 @@
 			</div>
 		</div>
 	</div>
-	<br>
-	<br>
+
 	<footer>
 		© 2023 High Alpha. All rights reserved.
 	</footer>
+
 	<!-- 
 		"Body" vahele kirjutame lehe sisu. siin ei ole hetkel midagi. Lehe sisu on tühi, sest see on välja kommenteeritud.
 
@@ -130,17 +145,6 @@
 		<code></code>
 		<div></div>
 	-->
-	<div></div>
-	<div></div>
-
-	<div>
-		<h1></h1>
-	</div>
-
-	<div>
-		<h1><span></span></h1>
-	</div>
-
 </body>
 
 </html>
