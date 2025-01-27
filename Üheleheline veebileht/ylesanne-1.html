@@ -17,12 +17,12 @@
 		/*Body style*/
 		body {
 			overflow: scroll;
+			margin: 0;
 		}
 
 		/*header style*/
 		.header {
 			display: flex;
-			align-items: flex-start;
 			justify-content: space-between;
 			background-image: url('/images/9aqY27bo-6XmDjMJjh5-\(edit\).jpg');
 			background-size: cover;
@@ -34,13 +34,12 @@
 		.logo {
 			height: 50px;
 			width: auto;
-			padding-top: 40px;
 		}
 
 		.web-tabs {
 			display: flex;
 			gap: 15px;
-			padding-top: 40px;
+			padding-top: 20px;
 			padding-right: 40px;
 		}
 
@@ -52,9 +51,102 @@
 		}
 
 
-		/*main style*/
+		/*info-box style*/
+		.info-box {
+			height: 370px;
+			width: 1000px;
+			max-width: fit-content;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
+		h1 {
+			max-width: fit-content;
+			margin-right: auto;
+			font-size: 38px;
+			font-family: sans-serif;
+		}
 
+		.info-text {
+			font-size: 18px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		/*button-box style*/
+		.button-box {
+			max-width: fit-content;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#b1 {
+			height: 350px;
+			width: 490px;
+			margin-right: 10px;
+		}
+
+		#b2 {
+			height: 350px;
+			width: 490px;
+			margin-left: 10px;
+		}
+
+		/*other-box*/
+		.other-box {
+			max-width: fit-content;
+			margin-left: auto;
+			margin-right: auto;
+			width: 1000px;
+			height: 337px;
+			background-color: #18181a;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#other-header {
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 30px;
+			color: white;
+		}
+
+		.other-text {
+			margin-left: 100px;
+			margin-right: 50px;
+			font-size: 18px;
+			font-family: Arial, Helvetica, sans-serif;
+			color: #ADB1B8;
+		}
+
+		#b3 {
+			height: 48px;
+			width: 212px;
+			border-radius: 5px;
+			border: 0px;
+			background-color: #FF0004;
+			color: white;
+			font-size: 18px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		#b3:hover {
+			background-color: #aa0205;
+			cursor: pointer;
+		}
+
+		/*footer*/
+		footer {
+			color: white;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 16px;
+			background-color: #101627;
+			width: 100%;
+			height: 100px;
+			text-align: center;
+			line-height: 100px;
+		}
 
 
 		/* https://developer.mozilla.org/en-US/docs/Web/CSS/color */
@@ -76,53 +168,57 @@
 			<a class="web-tab" href="">Töö pakkumised</a>
 		</div>
 	</div>
-
-	<div class="main">
-		<div class="info-box">
-			<h1>Bimmer Motors on BMW AG sõltumatu spetsialist</h1>
-			<p class="info-text">
-				Pakume BMW / Mini sõidukite ja BMW mootorrataste hooldus- ja remonditeenust ning originaal
-				lisavarustuse
-				paigaldust.
-
-				Meie meeskonnaliikmete enam kui kümne aasta pikkune kindlale margile spetsialiseerumine annab meile
-				julguse väita, et oleme BMW spetsialistid ning saame oma teadmiste ja kogemustega olla Sulle
-				usaldusväärne partner. Oleme läbinud BMW AG koolitused ning omame sellekohaseid sertifikaate.
-				Teostame
-				hooldust ja remonti vastavalt BMW tehase nõuetele. Oma töös kasutame BMW originaal tarkvara ja
-				tööriistu
-				ning kõik meie teostatud hooldused kajastuvad BMW tehaseprogrammis.
-
-				Bimmer Motorsi loomise eesmärk oli viia BMW / Mini sõidukite teenindus ja autohoolduse kvaliteet
-				uuele
-				tasemele ning pakkuda kliendile erinevaid võimalusi oma auto isikupärasemaks muutmisel. Meie
-				missiooniks
-				on pakkuda kliendile maksimaalset rahulolu tulihingeliste BMW austajatena pakume oma kliendile
-				teenust
-				nii nagu me sooviksime, et seda meile endile osutataks.
-			</p>
-
-			<div>
-				<button>Teenused</button>
-				<button>Küsi hinnapakkumist</button>
-			</div>
-
-			<div>
-				<h2>Liitu meiega</h2>
-				<p class="info-text">
-					Meil on hea meel teatada, et bimmer24.ee pakub oma klientidele fantastilist soodustust! Liituge meie
-					kliendiprogrammiga ja võtke osa erilisest sooduskampaaniast, mis aitab teil säästa auto hoolduse
-					pealt.
-				</p>
-				<button>Liitu</button>
-			</div>
-		</div>
+	<br>
+	<br>
+	<br>
+	<div class="info-box">
+		<h1>Bimmer Motors on BMW AG sõltumatu spetsialist</h1>
+		<p class="info-text">
+			Pakume BMW / Mini sõidukite ja BMW mootorrataste hooldus- ja remonditeenust ning originaal
+			lisavarustuse paigaldust. <br>
+			<br>
+			Meie meeskonnaliikmete enam kui kümne aasta pikkune kindlale margile spetsialiseerumine annab meile
+			julguse väita, et oleme BMW spetsialistid ning saame oma teadmiste ja kogemustega olla Sulle
+			usaldusväärne partner. Oleme läbinud BMW AG koolitused ning omame sellekohaseid sertifikaate.
+			Teostame
+			hooldust ja remonti vastavalt BMW tehase nõuetele. Oma töös kasutame BMW originaal tarkvara ja
+			tööriistu
+			ning kõik meie teostatud hooldused kajastuvad BMW tehaseprogrammis. <br>
+			<br>
+			Bimmer Motorsi loomise eesmärk oli viia BMW / Mini sõidukite teenindus ja autohoolduse kvaliteet
+			uuele
+			tasemele ning pakkuda kliendile erinevaid võimalusi oma auto isikupärasemaks muutmisel. Meie
+			missiooniks
+			on pakkuda kliendile maksimaalset rahulolu tulihingeliste BMW austajatena pakume oma kliendile
+			teenust
+			nii nagu me sooviksime, et seda meile endile osutataks.
+		</p>
 	</div>
-
+	<br>
+	<br>
+	<div class="button-box">
+		<button id="b1">Teenused</button>
+		<button id="b2">Küsi hinnapakkumist</button>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="other-box">
+		<h1 id="other-header">Liitu meiega</h1>
+		<p class="other-text">
+			Meil on hea meel teatada, et bimmer24.ee pakub oma klientidele fantastilist soodustust! Liituge meie
+			kliendiprogrammiga ja võtke osa erilisest sooduskampaaniast, mis aitab teil säästa auto hoolduse
+			pealt.
+		</p>
+		<button id="b3">Liitu nüüd</button>
+	</div>
+	<br>
+	<br>
+	<br>
 	<footer>
 		© 2023 High Alpha. All rights reserved.
 	</footer>
-
 	<!-- 
 		"Body" vahele kirjutame lehe sisu. siin ei ole hetkel midagi. Lehe sisu on tühi, sest see on välja kommenteeritud.
 
