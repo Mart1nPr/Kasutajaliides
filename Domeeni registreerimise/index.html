@@ -4,18 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PlaneetDomeen.ee</title>
+    <link rel="icon" type="image/icon" href="/images/globe-png-hd-1.png">
     <link rel="stylesheet" href="/style/index.css">
 </head>
 <!--Kommentaarid on lisatud enda jaoks-->
 <style>
     body {
         margin: 0;
+        background-color: rgba(0, 0, 0, 0.89);
+        overflow: scroll;
     }
-
+    
     /*header style*/
     .header {
-        background-color: rgb(6, 164, 255);
+        background-image: linear-gradient(to right, rgb(6, 164, 255), rgba(6, 164, 255, 0.253));
         height: 60px;
         width: 100%;
         display: flex;
@@ -24,12 +27,17 @@
     }
 
     .header-title {
+        color: white;
+        font-weight: bold;
         padding-top: 10px;
         padding-left: 20px;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
-        color: white;
         text-decoration: none;
+    }
+
+    .header-title:hover {
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
     }
 
     .tab-buttons {
@@ -44,14 +52,26 @@
         font-family: Arial, Helvetica, sans-serif;
         padding: 10px;
     }
+
+    .tab-button:hover {
+        font-weight: bold;
+    }
     /*end of header style*/
 
     /*main-container style*/
     .main-container {
-        padding-top: 10%;
-        max-width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/images/globe-png-hd-1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 450px 450px;
+        height: 500px;
+        width: 500px;
+        margin-inline: auto;
+        transform: translateY(200px);
     }
 
     .search-container {
@@ -60,28 +80,68 @@
     }
 
     .search {
-        font-size: 20px;
-        height: 30px;
+        border: 0px;
+        border-radius: 0px;
+        font-size: 15px;
+        font-weight: bold;
+        height: 34px;
         width: 400px;
     }
 
     #search-button {
+        background-color: rgb(6, 164, 255);
+        color: white;
+        font-weight: bold;
+        border: 0px;
         height: 36px;
         width: 70px;
     }
 
+    #search-button:hover {
+        cursor: pointer;
+        background-color: rgb(2, 129, 202);
+    }
+
     h1.main-title {
-        justify-content: center;
+        color: white;
+        text-shadow: 2px 2px black;
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    h1.main-title:hover {
+        cursor: pointer;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
     /*end of main-container style*/
+
+    /*about-container style*/
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-inline: auto;
+        transform: translateY(200px);
+    }
+
+    h1.about-header {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+
+    .about-text {
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    /*end of about-container style*/
 </style>
 
 <body>
     <!--Start of header-->
     <div class="header">
         <div class="title-container">
-            <a class="header-title" href="">Domeenid.ee</a>
+            <a class="header-title" href="">PlaneetDomeen.ee</a>
         </div>
         <div class="tab-buttons">
             <a class="tab-button" href="">Avaleht</a>
@@ -101,6 +161,17 @@
         </div>
     </div>
     <!--End of main-container-->
+
+    <!--Start of-->
+    <div class="about-container">
+        <h1 class="about-header">Meie kohta</h1>
+        <p class="about-text">
+            PlaneetDomeen.ee on 2025. aastal loodud kaasaegne domeeniteenuste veebileht. <br>
+            Pakume soodsaid ja usaldusväärseid domeeninimesid nii ettevõtetele kui eraisikutele, et aidata teil leida ideaalne
+            veebiaadress.
+        </p>
+    </div>
+    <!--End of-->
 
     <footer></footer>
 </body>
