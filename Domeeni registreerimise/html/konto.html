@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaneetDomeen.ee</title>
+    <link rel="icon" type="image/icon" href="/images/globe-png-hd-1.png">
+    <link rel="stylesheet" href="/style/index.css">
+</head>
+<!--Kommentaarid on lisatud enda jaoks-->
+<style>
+    body {
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.89);
+        overflow: scroll;
+    }
+
+    /*header style*/
+    .header {
+        background-image: linear-gradient(to right, rgb(6, 164, 255), rgba(6, 164, 255, 0.253));
+        height: 60px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-title {
+        color: white;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-left: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .header-title:hover {
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    .tab-buttons {
+        display: flex;
+        gap: 20px;
+        padding-right: 20px;
+    }
+
+    .tab-button {
+        color: white;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+    }
+
+    .tab-button:hover {
+        font-weight: bold;
+    }
+
+    /*end of header style*/
+
+    /*Start of account style*/
+    .account-container {
+        height: 500px;
+        width: 700px;
+        margin-inline: auto;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(200px);
+    }
+
+    h1.account-header {
+        color: white;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        text-decoration: none;
+    }
+
+    h1.account-header:hover {
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        cursor: pointer;
+    }
+
+    input {
+        border: 0px;
+        border-radius: 0px;
+        font-size: 13px;
+        font-weight: bold;
+        height: 34px;
+        width: 300px;
+    }
+
+    button.eraisik,
+    button.ettevõte {
+        height: 30px;
+        width: 100px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.658);
+        border-radius: 5px;
+    }
+
+    button.eraisik:hover {
+        background-color: black;
+        cursor: pointer;
+    }
+
+    button.ettevõte:hover {
+        background-color: black;
+        cursor: pointer;
+    }
+
+    button.reg {
+        height: 30px;
+        width: 100px;
+        color: white;
+        background-color: rgb(6, 132, 204);
+        border-radius: 5px;
+    }
+
+    button.reg:hover {
+        background-color: rgb(5, 103, 160);
+        cursor: pointer;
+    }
+
+    .inputs {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.inputs-text {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+
+    .account-container-header {
+        display: flex;
+    }
+
+    .reg-form {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 300px;
+    }
+
+    /*End of account style*/
+</style>
+
+<body>
+    <!--Start of header-->
+    <div class="header">
+        <div class="title-container">
+            <a class="header-title" href="../index.html">PlaneetDomeen.ee</a>
+        </div>
+        <div class="tab-buttons">
+            <a class="tab-button" href="../index.html">Avaleht</a>
+            <a class="tab-button" href="">Minu domeenid</a>
+            <a class="tab-button" href="">Ostukorv</a>
+            <a class="tab-button" href="">Konto</a>
+        </div>
+    </div>
+    <!--End of header-->
+
+    <!--Start of account-->
+    <div class="account-container">
+        <!--Start of account-container-header-->
+        <div class="account-container-header">
+            <h1 class="account-header">Konto loomine</h1>
+            <div class="reg-form">
+                <button class="eraisik">eraisik</button>
+                <button class="ettevõte">ettevõte</button>
+            </div>
+        </div>
+        <!--End of account-container-header-->
+
+        <!--Start of inputs-->
+        <div class="inputs">
+            <div class="personal-info">
+                <input type="text" name="" id="" placeholder="Nimi">
+                <input type="text" name="" id="" placeholder="Perekonna nimi">
+                <input type="text" name="" id="" placeholder="Email">
+                <!--
+                <p class="inputs-text">
+                    Kõik uued paroolid peavad sisaldama vähemalt 8 tähemärki.
+                    Parima tugevuse huvides soovitame lisada ka paroolis vähemalt üks suur ja üks väiketäht (Aa-Zz), üks
+                    erisümbol (#, &, % jne) ja üks number (0-9).
+                </p>
+                -->
+                <input type="password" name="" id="" placeholder="Parool">
+                <input type="text" name="" id="" placeholder="Telefoni number">
+            </div>
+            <div class="business-info">
+                <input type="text" name="" id="" placeholder="Ettevõte nimi">
+                <input type="text" name="" id="" placeholder="Address">
+            </div>
+        </div>
+        <!--end of inputs-->
+
+        <!--Start of sign-in-options-->
+        <div class="sign-in-options">
+            <a href="">Logi sisse</a>
+            <button class="reg">Loo konto</button>
+        </div>
+        <!--End of sign-in-options-->
+
+    </div>
+    <!--End of account-->
+
+    <footer></footer>
+</body>
+
+</html>
