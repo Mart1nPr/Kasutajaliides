@@ -58,60 +58,26 @@
         font-weight: bold;
     }
 
-    /*main-container style*/
-    .main-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-image: url(/images/globe-png-hd-1.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 450px 450px;
+    /* Updated domain-container style */
+    .domain-container {
+        display: flex; /* Flexbox to align elements horizontally */
+        justify-content: space-between; /* Distribute the space between the containers */
+        margin-top: 80px; /* Adjust for the fixed header */
+        padding: 20px; /* Optional, for spacing */
+    }
+
+    .domain-list-box {
+        background-color: white;
         height: 500px;
-        width: 500px;
-        margin-inline: auto;
-        transform: translateY(200px);
+        width: 700px;
+        padding: 10px;
     }
 
-    .search-container {
-        display: flex;
-        align-items: center;
-    }
-
-    .search {
-        border: 0px;
-        border-radius: 0px;
-        font-size: 15px;
-        font-weight: bold;
-        height: 34px;
-        width: 500px;
-        border: solid gray 1px;
-    }
-
-    #search-button {
-        background-color: rgb(6, 164, 255);
-        color: white;
-        font-weight: bold;
-        border: 0px;
-        height: 36px;
-        width: 70px;
-    }
-
-    #search-button:hover {
-        cursor: pointer;
-        background-color: rgb(2, 129, 202);
-    }
-
-    h1.main-title {
-        color: white;
-        text-shadow: 2px 2px black;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    h1.main-title:hover {
-        cursor: pointer;
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    .domain-status-container {
+        background-color: white;
+        height: 500px;
+        width: 200px;
+        padding: 10px;
     }
 
     /*footer style*/
@@ -137,23 +103,26 @@
 <body>
     <div class="header">
         <div class="title-container">
-            <a class="header-title" href="">PlaneetDomeen.ee</a>
+            <a class="header-title" href="../index.html">PlaneetDomeen.ee</a>
         </div>
         <div class="tab-buttons">
-            <a class="tab-button" href="">Avaleht</a>
+            <a class="tab-button" href="../index.html">Avaleht</a>
             <a class="tab-button" href="">Minu domeenid</a>
             <a class="tab-button" href="">Ostukorv</a>
             <a class="tab-button" href="/html/konto.html">Konto</a>
         </div>
     </div>
 
-    <div class="main-container">
-        <h1 class="main-title">Vali oma domeen</h1>
-        <div class="search-container">
-            <input type="text" class="search" minlength="4" maxlength="39" placeholder="Sisestage domeeni nimi">
-            <a href="/html/domainreg.html">
-                <button href="html/domainreg.html" id="search-button">Otsi</button>
-            </a>
+    <div class="domain-container">
+        <div class="domain-list-box">
+            <div class="domain-selection-box">
+                <p>domain</p>
+                <p>price</p>
+                <button>lisa</button>
+            </div>
+        </div>
+        <div class="domain-status-container">
+            <!-- Domain status content goes here -->
         </div>
     </div>
 
