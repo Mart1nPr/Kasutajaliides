@@ -58,26 +58,41 @@
         font-weight: bold;
     }
 
-    /* Updated domain-container style */
+    /*domain-container style*/
     .domain-container {
-        display: flex; /* Flexbox to align elements horizontally */
-        justify-content: space-between; /* Distribute the space between the containers */
-        margin-top: 80px; /* Adjust for the fixed header */
-        padding: 20px; /* Optional, for spacing */
+        justify-content: center;
+        display: flex;
+        margin-top: 80px;
+        padding: 20px;
     }
 
     .domain-list-box {
         background-color: white;
         height: 500px;
         width: 700px;
-        padding: 10px;
+        margin-right: 10px;
     }
 
     .domain-status-container {
         background-color: white;
         height: 500px;
         width: 200px;
-        padding: 10px;
+        margin-left: 10px;
+    }
+
+    .domain-selection-box {
+        color: white;
+        display: flex;
+        margin: 10px 10px 10px;
+        background-color: rgb(173, 173, 173);
+    }
+
+    #add-button {
+        height: 30px;
+        width: 100px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.658);
+        border-radius: 5px;
     }
 
     /*footer style*/
@@ -115,14 +130,44 @@
 
     <div class="domain-container">
         <div class="domain-list-box">
+            <!--Avaiable domains-->
+            <div class="available-box">
+                domain.ee is not avaiable
+            </div>
             <div class="domain-selection-box">
-                <p>domain</p>
-                <p>price</p>
-                <button>lisa</button>
+                <p id="domain-item" class="domain-item">domain.ee</p>
+                <p class="domain-item">10€</p>
+                <button id="add-button" class="domain-item">lisa</button>
+            </div>
+            <div class="domain-selection-box">
+                <p id="domain-item" class="domain-item">domain.ee</p>
+                <p class="domain-item">10€</p>
+                <button id="add-button" class="domain-item">lisa</button>
+            </div>
+            <div class="domain-selection-box">
+                <p id="domain-item" class="domain-item">domain.ee</p>
+                <p class="domain-item">10€</p>
+                <button id="add-button" class="domain-item">lisa</button>
             </div>
         </div>
         <div class="domain-status-container">
-            <!-- Domain status content goes here -->
+            <h1>Domeeni</h1>
+            Hind kokku: 0€<br>
+            <br>
+            Valitud domeenid: <br>
+            <ul>
+                <li>
+                    domeen (aeg)<br>
+                </li>
+                <li>
+                    domeen (aeg)<br>
+                </li>
+                <li>
+                    domeen (aeg)<br>
+                </li>
+            </ul>
+            <button>Tagasi</button>
+            <button>Edasi</button>
         </div>
     </div>
 
