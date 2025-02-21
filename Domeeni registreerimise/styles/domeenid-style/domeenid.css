@@ -1,0 +1,94 @@
+body {
+    background-color: rgba(0, 0, 0, 0.89);
+    /*
+    background-image: linear-gradient(to bottom, rgb(6, 164, 255), rgba(6, 164, 255, 0.253));
+    background-attachment: fixed;
+    */
+}
+
+.navbar-nav {
+    margin-left: auto;  
+}
+
+.navbar-brand {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+.navbar-brand:hover {
+    color: white;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.nav-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, rgb(6, 164, 255), rgba(6, 164, 255, 0.253));
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: white;
+    font-weight: bold;
+}
+
+#nav-dropdown {
+    color: white;
+}
+
+#nav-dropdown:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    border-radius: 0px;
+    left: -70px !important; 
+    right: 0 !important; 
+}
+
+.dropdown-item {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.progress {
+    /*background-color: rgba(180, 176, 176, 0.137); might use it*/
+    background-color: white;
+    border: 1px solid gray;
+    margin-bottom: 25px;
+}
+
+.test-box {
+    /*background-color: rgba(180, 176, 176, 0.137); might use it*/
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.summary-box {
+    /*background-color: rgba(180, 176, 176, 0.137); might use it*/
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.domain-container {
+    margin-top: 300px;
+}
