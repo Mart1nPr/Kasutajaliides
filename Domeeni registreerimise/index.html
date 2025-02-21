@@ -57,9 +57,16 @@
                         <!--center search title-->
                         <div id="search-title" class="col-12 col-sm-6 text-center mb-3">PlaneetDomeen</div>
                         <!--force next column to break to a new line-->
-                        <div class="w-100">
-                            <input id="search" minlength="4" maxlength="256" placeholder="Sisesta domeeni nimi">
-                        </div>
+                        <!--
+                            <div class="w-100 d-flex input-group">
+                                <input class="form-control" id="search"  minlength="4" maxlength="256" placeholder="Sisesta domeeni nimi">
+                                <button id="search-button">otsi</button>
+                            </div>
+                        -->
+                        <div class="input-group mb-3 align-items-center">
+                            <input type="text" class="form-control" id="search"  placeholder="Sisesta domeeni nimi" aria-describedby="button-addon2">
+                            <button id="search-button" class="btn btn-primary text-align-center" type="button" id="button-addon2">otsi</button>
+                          </div>
                     </div>
                 </div>
             </div>
