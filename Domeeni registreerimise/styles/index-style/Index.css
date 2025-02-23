@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(0, 0, 0, 0.89);
+    background-image: url(/images/space-1164579_1920.png);
     /*
     background-image: linear-gradient(to bottom, rgb(6, 164, 255), rgba(6, 164, 255, 0.253));
     background-attachment: fixed;
@@ -33,7 +33,7 @@ body {
 }
 
 .navbar {
-    background-image: linear-gradient(to right, rgb(6, 164, 255), rgba(6, 164, 255, 0.253));
+    background-image: linear-gradient(to right, rgb(6, 164, 255), rgb(0, 60, 95));
 }
 
 .nav-link {
@@ -56,6 +56,27 @@ body {
 #nav-dropdown:hover {
     color: white;
     font-weight: bold;
+}
+
+.navbar-toggler {
+    border-radius: 0px;
+    border: 0px;
+    outline: none !important; 
+    box-shadow: none !important; 
+}
+
+.dropdown-menu {
+    border-radius: 5px;
+    left: -70px !important; 
+    right: 0 !important; 
+    width: 150px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.dropdown-item {
+    font-weight: bold;
+    font-size: 12px;
+    width: 150px;
 }
 
 /*
@@ -135,15 +156,4 @@ body {
     #search-title {
         font-size: 20px;
     }
-}
-
-.dropdown-menu {
-    border-radius: 0px;
-    left: -70px !important; 
-    right: 0 !important; 
-}
-
-.dropdown-item {
-    font-weight: bold;
-    font-size: 13px;
 }
