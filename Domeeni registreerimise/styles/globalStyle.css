@@ -1,9 +1,5 @@
 body {
-    background-color: rgba(0, 0, 0, 0.89);
-    /*
-    background-image: linear-gradient(to bottom, rgb(6, 164, 255), rgba(6, 164, 255, 0.253));
-    background-attachment: fixed;
-    */
+    background-image: url(/images/space-1164579_1920.png);
 }
 
 .navbar-nav {
@@ -32,7 +28,7 @@ body {
 }
 
 .navbar {
-    background-image: linear-gradient(to right, rgb(6, 164, 255), rgba(6, 164, 255, 0.253));
+    background-image: linear-gradient(to right, rgb(6, 164, 255), rgb(0, 60, 95));
 }
 
 .nav-link {
@@ -76,29 +72,4 @@ body {
     font-weight: bold;
     font-size: 12px;
     width: 150px;
-}
-
-.progress {
-    /*background-color: rgba(180, 176, 176, 0.137); might use it*/
-    background-color: white;
-    border: 1px solid gray;
-    margin-bottom: 25px;
-}
-
-.test-box {
-    /*background-color: rgba(180, 176, 176, 0.137); might use it*/
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
-
-.summary-box {
-    /*background-color: rgba(180, 176, 176, 0.137); might use it*/
-    background-color: white;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
-
-.domain-container {
-    margin-top: 300px;
 }
