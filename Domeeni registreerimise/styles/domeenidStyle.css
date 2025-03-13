@@ -1,0 +1,11 @@
+.container {
+    max-width: 900px;
+}
+
+#domain-container {
+    margin-top: 200px;
+    height: 500px;
+    background-color: white;
+    border: 1px #5C5C5C solid;
+    border-radius: 5px;
+}
