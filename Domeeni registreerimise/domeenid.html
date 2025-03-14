@@ -54,14 +54,33 @@
             <div class="row">
                 <!-- Left content -->
                 <div class="col-md-9">
-                    <div id="domain-status">
-                        <p style="font-size: 25px;">Domeen.org</p>
+                    <div id="domain-status"
+                        class="d-flex flex-column align-items-start justify-content-center text-center">
+                        <p class="searched-domain m-0">Otsitud domeen: {example.org}</p>
+                        <p class="searched-domain-status m-0">{Domeen (on / ei ole) saadaval}</p>
+                        <div class="d-flex justify-content-start">
+                            <div class="col">
+                                <div class="domain-action">
+                                    <div class="dropdown">
+                                        <button type="button" data-bs-toggle="dropdown">Periood</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">1 aasta</a></li>
+                                            <li><a class="dropdown-item" href="#">2 aastat</a></li>
+                                            <li><a class="dropdown-item" href="#">3 aastat</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <button class="btn-space">Lisa</button>
+                            </div>
+                        </div>
                     </div>
-                    <div id="domain-list">
 
+                    <div id="domain-list">
                         <div class="row domain-row">
                             <div class="col">
-                                <div class="domain-name">Domeen</div>
+                                <div class="domain-name">{example}.ee</div>
                             </div>
                             <div class="col">
                                 <div class="domain-price">€ 10.00 aastas</div>
@@ -84,7 +103,7 @@
                         </div>
                         <div class="row domain-row">
                             <div class="col">
-                                <div class="domain-name">Domeen</div>
+                                <div class="domain-name">{example}.eu</div>
                             </div>
                             <div class="col">
                                 <div class="domain-price">€ 10.00 aastas</div>
@@ -107,7 +126,7 @@
                         </div>
                         <div class="row domain-row">
                             <div class="col">
-                                <div class="domain-name">Domeen</div>
+                                <div class="domain-name">{example}.com</div>
                             </div>
                             <div class="col">
                                 <div class="domain-price">€ 10.00 aastas</div>
@@ -130,7 +149,7 @@
                         </div>
                         <div class="row domain-row">
                             <div class="col">
-                                <div class="domain-name">Domeen</div>
+                                <div class="domain-name">{example}.net</div>
                             </div>
                             <div class="col">
                                 <div class="domain-price">€ 10.00 aastas</div>
@@ -153,7 +172,7 @@
                         </div>
                         <div class="row domain-row">
                             <div class="col">
-                                <div class="domain-name">Domeen</div>
+                                <div class="domain-name">{example}.org</div>
                             </div>
                             <div class="col">
                                 <div class="domain-price">€ 10.00 aastas</div>
@@ -176,7 +195,7 @@
                         </div>
                         <div class="row domain-row">
                             <div class="col">
-                                <div class="domain-name">Domeen</div>
+                                <div class="domain-name">{example}.xyz</div>
                             </div>
                             <div class="col">
                                 <div class="domain-price">€ 10.00 aastas</div>
@@ -199,7 +218,7 @@
                         </div>
                         <div class="row domain-row">
                             <div class="col">
-                                <div class="domain-name">Domeen</div>
+                                <div class="domain-name">{example}.co</div>
                             </div>
                             <div class="col">
                                 <div class="domain-price">€ 10.00 aastas</div>
@@ -222,7 +241,7 @@
                         </div>
                         <div class="row domain-row">
                             <div class="col">
-                                <div class="domain-name">Domeen</div>
+                                <div class="domain-name">{example}.me</div>
                             </div>
                             <div class="col">
                                 <div class="domain-price">€ 10.00 aastas</div>
@@ -245,7 +264,7 @@
                         </div>
                         <div class="row domain-row">
                             <div class="col">
-                                <div class="domain-name">Domeen</div>
+                                <div class="domain-name">{example}.pt</div>
                             </div>
                             <div class="col">
                                 <div class="domain-price">€ 10.00 aastas</div>
@@ -272,13 +291,13 @@
                 <!-- Right content -->
                 <div class="col-md-3">
                     <div id="domain-summary">
-                        <div class="summary" style="height: 450px;">
+                        <div class="summary">
                             <p style="font-size: 26px;">Kokkuvõte</p>
                             <div class="selected-domains">
                                 <p>Valitud domeenid:</p>
-                                <li>Domeen 1</li>
-                                <li>Domeen 2</li>
-                                <li>Domeen 3</li>
+                                <li>{example}.org</li>
+                                <li>{example}.ee</li>
+                                <li>{example}.net</li>
                             </div>
                             <br>
                             <div class="price-summary">
@@ -290,7 +309,7 @@
                                 <button id="back-button" class="nav-button">Tagasi</button>
                             </a>
                             <a href="makse.html">
-                                <button id="next-button" class="nav-button">Edasi</button>
+                                <button id="next-button" class="nav-button btn-space">Edasi</button>
                             </a>
                         </div>
                     </div>
