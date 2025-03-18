@@ -1,2 +1,2 @@
-## Kasutajaliidese
-Kasutajaliidese disaini tunni tööde repository.
+## Kasutajaliides
+Kasutajaliidese disaini tunni tööde ülesanded
