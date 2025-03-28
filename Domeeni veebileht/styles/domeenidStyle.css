@@ -13,8 +13,8 @@
 }
 
 #domain-list {
-    margin-top: 10px;
-    margin-bottom: 10px;  
+    margin-top: 20px;
+    margin-bottom: 20px;  
 }
 
 .searched-domain {
@@ -24,10 +24,6 @@
 
 .btn-space {
     margin-left: 10px;
-}
-
-#domain-summary {
-    height: 500px;
 }
 
 .domain-name {
@@ -44,14 +40,77 @@
     margin-top: 10px;
 }
 
-.nav-button {
+.back-button {
+    background-color: blue;
+    color: white;
     border-radius: 5px;
+    width: 80px;
+}
+
+.back-button:hover {
+    background-color: rgb(1, 1, 209);
+    font-weight: bold;
+}
+
+.pay-button {
+    background-color: blue;
+    color: white;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.pay-button:hover {
+    background-color: rgb(1, 1, 209);
+    font-weight: bold;
 }
 
 .summary {
     height: 430px;
 }
 
-.nav-href {
-    text-decoration: none;
+.add-button {
+    background-color: rgb(53, 126, 199);
+    color: white;
+    border-radius: 5px;
+    width: 80px;
+}
+
+.add-button:hover {
+    background-color: rgb(47, 113, 179);
+    font-weight: bold;
+}
+
+.period-button {
+    background-color: rgb(53, 126, 199);
+    color: white;
+    border-radius: 5px;
+    width: 80px;
+}
+
+.period-button:hover {
+    background-color: rgb(47, 113, 179);
+    font-weight: bold;
+}
+
+.summary-title {
+    font-size: 26px;
+}
+
+#searched-domain-selection {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.summary {
+    height: 500px;
+}
+
+.right-container {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid black;
+}
+
+.left-container {
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid black;
 }
