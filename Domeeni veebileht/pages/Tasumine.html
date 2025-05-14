@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasumine</title>
+    <!--Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles/global.css">
+    <style>
+        .progress_bar_container {
+            margin-top: 100px;
+            /* height changer */
+            padding: 0px;
+        }
+
+        .payment_container {
+            margin-top: 5px;
+            /* height changer */
+            padding: 0px 0px 0px 0px;
+        }
+
+        .payment_container_content {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            min-height: 500px;
+            padding-top: 20px;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 20px;
+        }
+
+        .domain_row {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .back_container {
+            margin-top: 80px;
+            /* height changer */
+            padding: 0px;
+        }
+
+        .container-sm {
+            max-width: 1000px;
+        }
+
+        .column_text {
+            font-size: 20px;
+        }
+
+        p {
+            margin-top: 1rem;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">MyDomain</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="home nav-link" href="../index.html">Avaleht</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="domains nav-link" href="domeenid.html">Domeenid</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="about nav-link" href="meist.html">Meist</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Konto
+                        </a>
+                        <ul class="konto dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Logi sisse</a></li>
+                            <li><a class="dropdown-item" href="registreeru.html">Registreeru</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Content -->
+    <div class="main-container container-fluid">
+        <div class="sub-container container-lg">
+            <!-- Progress bar -->
+            <div class="progress_bar_container container-sm">
+                <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuemin="0"
+                    aria-valuemax="100">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 66.66%"></div>
+                </div>
+            </div>
+            <!-- Back container-->
+            <div class="back_container container-sm">
+                <button class="btn btn-primary" onclick="window.location.href='valimine.html';">Tagasi</button>
+            </div>
+            <!-- Payment container -->
+            <div class="payment_container container-sm">
+                <div class="payment_container_content container-fluid">
+                    <h3>Tasumine</h3>
+                    <div class="selected_domains">
+                        <p>Valitud domeenid:</p>
+                        <div class="domain_row container-fluid">
+                            <div class="row align-items-center text-center g-2">
+                                <div class="col">minudomeen.ee</div>
+                                <div class="col">€ 10.00 aastas</div>
+                                <div class="col">1 aasta</div>
+                            </div>
+                        </div>
+                        <div class="domain_row container-fluid">
+                            <div class="row align-items-center text-center g-2">
+                                <div class="col">minudomeen.eu</div>
+                                <div class="col">€ 10.00 aastas</div>
+                                <div class="col">1 aasta</div>
+                            </div>
+                        </div>
+                        <div class="domain_row container-fluid">
+                            <div class="row align-items-center text-center g-2">
+                                <div class="col">minudomeen.org</div>
+                                <div class="col">€ 10.00 aastas</div>
+                                <div class="col">1 aasta</div>
+                            </div>
+                        </div>
+                        <div class="domain_row container-fluid">
+                            <div class="row align-items-center text-center g-2">
+                                <div class="col">minudomeen.net</div>
+                                <div class="col">€ 10.00 aastas</div>
+                                <div class="col">1 aasta</div>
+                            </div>
+                        </div>
+                        <div class="domain_row container-fluid">
+                            <div class="row align-items-center text-center g-2">
+                                <div class="col">minudomeen.com</div>
+                                <div class="col">€ 10.00 aastas</div>
+                                <div class="col">1 aasta</div>
+                            </div>
+                        </div>
+                        <div class="domain_row container-fluid">
+                            <div class="row align-items-center text-center g-2">
+                                <div class="col">minudomeen.me</div>
+                                <div class="col">€ 10.00 aastas</div>
+                                <div class="col">1 aasta</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary">
+                        <p>Summa kokku: € 60.00</p>
+                    </div>
+                    <div class="payment_options">
+                        <p>Makse viisid:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Bootstrap script link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
