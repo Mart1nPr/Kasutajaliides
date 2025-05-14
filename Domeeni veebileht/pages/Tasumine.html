@@ -25,7 +25,7 @@
         .payment_container_content {
             border: 1px solid #dee2e6;
             border-radius: 5px;
-            min-height: 500px;
+            height: auto;
             padding-top: 20px;
             padding-left: 32px;
             padding-right: 32px;
@@ -56,6 +56,11 @@
         p {
             margin-top: 1rem;
             margin-bottom: 0px;
+        }
+
+        .options {
+            margin-top: 5px;
+            max-width: 500px;
         }
     </style>
 </head>
@@ -162,6 +167,50 @@
                     </div>
                     <div class="payment_options">
                         <p>Makse viisid:</p>
+                        <div class="options row align-items-center text-center g-2">
+                            <div class="col-6 col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                                    <label class="form-check-label" for="radioDefault1">
+                                        <img style="height: 30px; width: 30px;" src="/assets/icons/MasterCard.png"
+                                            alt="MasterCard">
+                                        Master
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+                                    <label class="form-check-label" for="radioDefault2">
+                                        <img style="height: 20px; width: 20px;" src="/assets/icons/PayPal.png"
+                                            alt="PayPal">
+                                        PayPal
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">
+                                    <label class="form-check-label" for="radioDefault3">
+                                        <img style="height: 20px; width: 20px;" src="/assets/icons/Visa.png" alt="Visa">
+                                        Visa
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault4">
+                                    <label class="form-check-label" for="radioDefault4">
+                                        <img style="height: 20px; width: 20px;" src="/assets/icons/GooglePay.png"
+                                            alt="GooglePay">
+                                        Pay
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pay">
+                        <button class="btn btn-primary">Maksa</button>
                     </div>
                 </div>
             </div>
