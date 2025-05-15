@@ -19,24 +19,6 @@
         .payment_container {
             margin-top: 5px;
             /* height changer */
-            padding: 0px 0px 0px 0px;
-        }
-
-        .payment_container_content {
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-            height: auto;
-            padding-top: 20px;
-            padding-left: 32px;
-            padding-right: 32px;
-            padding-bottom: 20px;
-        }
-
-        .domain_row {
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-            padding-top: 5px;
-            padding-bottom: 5px;
         }
 
         .back_container {
@@ -49,8 +31,43 @@
             max-width: 1000px;
         }
 
+        .left_container {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            width: 700px;
+            min-height: 500px;
+        }
+
+        .left_container_content {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+        }
+
         .column_text {
             font-size: 20px;
+        }
+
+        .domain_row {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .right_container {
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            width: 300px;
+            min-height: 500px;
+        }
+
+        .right_container_content {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
         }
 
         p {
@@ -58,9 +75,12 @@
             margin-bottom: 0px;
         }
 
-        .options {
+        .era_isik {
+            margin-top: 10px;
+        }
+
+        .form-control {
             margin-top: 5px;
-            max-width: 500px;
         }
     </style>
 </head>
@@ -100,7 +120,7 @@
         </div>
     </nav>
     <!-- Content -->
-    <div class="main-container container-fluid">
+    <div class="main_container container-fluid">
         <div class="sub-container container-lg">
             <!-- Progress bar -->
             <div class="progress_bar_container container-sm">
@@ -113,109 +133,162 @@
             <div class="back_container container-sm">
                 <button class="btn btn-primary" onclick="window.location.href='valimine.html';">Tagasi</button>
             </div>
-            <!-- Payment container -->
+            <!-- Payment -->
             <div class="payment_container container-sm">
-                <div class="payment_container_content container-fluid">
-                    <h3>Tasumine</h3>
-                    <div class="selected_domains">
-                        <p>Valitud domeenid:</p>
-                        <div class="domain_row container-fluid">
-                            <div class="row align-items-center text-center g-2">
-                                <div class="col">minudomeen.ee</div>
-                                <div class="col">€ 10.00 aastas</div>
-                                <div class="col">1 aasta</div>
+                <div class="row">
+                    <!-- Left column -->
+                    <div class="left_container col-md-6">
+                        <div class="left_container_content">
+                            <h3>Tasumine</h3>
+                            <div class="selected_domains">
+                                <p>Valitud domeenid:</p>
+                                <div class="domain_row container-fluid">
+                                    <div class="row align-items-center text-center g-2">
+                                        <div class="col">minudomeen.ee</div>
+                                        <div class="col">€ 10.00 aastas</div>
+                                        <div class="col">1 aasta</div>
+                                    </div>
+                                </div>
+                                <div class="domain_row container-fluid">
+                                    <div class="row align-items-center text-center g-2">
+                                        <div class="col">minudomeen.eu</div>
+                                        <div class="col">€ 10.00 aastas</div>
+                                        <div class="col">1 aasta</div>
+                                    </div>
+                                </div>
+                                <div class="domain_row container-fluid">
+                                    <div class="row align-items-center text-center g-2">
+                                        <div class="col">minudomeen.org</div>
+                                        <div class="col">€ 10.00 aastas</div>
+                                        <div class="col">1 aasta</div>
+                                    </div>
+                                </div>
+                                <div class="domain_row container-fluid">
+                                    <div class="row align-items-center text-center g-2">
+                                        <div class="col">minudomeen.net</div>
+                                        <div class="col">€ 10.00 aastas</div>
+                                        <div class="col">1 aasta</div>
+                                    </div>
+                                </div>
+                                <div class="domain_row container-fluid">
+                                    <div class="row align-items-center text-center g-2">
+                                        <div class="col">minudomeen.com</div>
+                                        <div class="col">€ 10.00 aastas</div>
+                                        <div class="col">1 aasta</div>
+                                    </div>
+                                </div>
+                                <div class="domain_row container-fluid">
+                                    <div class="row align-items-center text-center g-2">
+                                        <div class="col">minudomeen.me</div>
+                                        <div class="col">€ 10.00 aastas</div>
+                                        <div class="col">1 aasta</div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="domain_row container-fluid">
-                            <div class="row align-items-center text-center g-2">
-                                <div class="col">minudomeen.eu</div>
-                                <div class="col">€ 10.00 aastas</div>
-                                <div class="col">1 aasta</div>
+                            <div class="summary">
+                                <p>Summa kokku: € 60.00</p>
                             </div>
-                        </div>
-                        <div class="domain_row container-fluid">
-                            <div class="row align-items-center text-center g-2">
-                                <div class="col">minudomeen.org</div>
-                                <div class="col">€ 10.00 aastas</div>
-                                <div class="col">1 aasta</div>
+                            <div class="payment_options">
+                                <p>Makse viisid:</p>
+                                <div class="options row align-items-center text-center g-2">
+                                    <div class="col-6 col-sm-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radioDefault"
+                                                id="radioDefault1">
+                                            <label class="form-check-label" for="radioDefault1">
+                                                <img style="height: 30px; width: 30px;"
+                                                    src="/assets/icons/MasterCard.png" alt="MasterCard">
+                                                Master
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radioDefault"
+                                                id="radioDefault2">
+                                            <label class="form-check-label" for="radioDefault2">
+                                                <img style="height: 20px; width: 20px;" src="/assets/icons/PayPal.png"
+                                                    alt="PayPal">
+                                                PayPal
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radioDefault"
+                                                id="radioDefault3">
+                                            <label class="form-check-label" for="radioDefault3">
+                                                <img style="height: 20px; width: 20px;" src="/assets/icons/Visa.png"
+                                                    alt="Visa">
+                                                Visa
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-sm-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="radioDefault"
+                                                id="radioDefault4">
+                                            <label class="form-check-label" for="radioDefault4">
+                                                <img style="height: 20px; width: 20px;"
+                                                    src="/assets/icons/GooglePay.png" alt="GooglePay">
+                                                Pay
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="domain_row container-fluid">
-                            <div class="row align-items-center text-center g-2">
-                                <div class="col">minudomeen.net</div>
-                                <div class="col">€ 10.00 aastas</div>
-                                <div class="col">1 aasta</div>
-                            </div>
-                        </div>
-                        <div class="domain_row container-fluid">
-                            <div class="row align-items-center text-center g-2">
-                                <div class="col">minudomeen.com</div>
-                                <div class="col">€ 10.00 aastas</div>
-                                <div class="col">1 aasta</div>
-                            </div>
-                        </div>
-                        <div class="domain_row container-fluid">
-                            <div class="row align-items-center text-center g-2">
-                                <div class="col">minudomeen.me</div>
-                                <div class="col">€ 10.00 aastas</div>
-                                <div class="col">1 aasta</div>
+                            <div class="pay">
+                                <button class="btn btn-primary">Maksa</button>
                             </div>
                         </div>
                     </div>
-                    <div class="summary">
-                        <p>Summa kokku: € 60.00</p>
-                    </div>
-                    <div class="payment_options">
-                        <p>Makse viisid:</p>
-                        <div class="options row align-items-center text-center g-2">
-                            <div class="col-6 col-sm-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
-                                    <label class="form-check-label" for="radioDefault1">
-                                        <img style="height: 30px; width: 30px;" src="/assets/icons/MasterCard.png"
-                                            alt="MasterCard">
-                                        Master
-                                    </label>
-                                </div>
+                    <!-- Right column -->
+                    <div class="right_container col-md-6">
+                        <div class="right_container_content">
+                            <h3>Omaniku andmed</h3>
+                            <button class="eraisik_button btn btn-primary">Eraisik</button>
+                            <button class="ettevõte_button btn btn-primary">Ettevõte</button>
+                            <div class="eraisik_container" style="display: block;">
+                                <p>Eraisik:</p>
+                                <input type="text" class="form-control" placeholder="Ees nimi">
+                                <input type="text" class="form-control" placeholder="Perekonna nimi">
+                                <input type="text" class="form-control" placeholder="Telefoni number">
+                                <input type="text" class="form-control" placeholder="Meil">
+                                <input type="text" class="form-control" placeholder="Posti indeks">
                             </div>
-                            <div class="col-6 col-sm-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
-                                    <label class="form-check-label" for="radioDefault2">
-                                        <img style="height: 20px; width: 20px;" src="/assets/icons/PayPal.png"
-                                            alt="PayPal">
-                                        PayPal
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6 col-sm-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">
-                                    <label class="form-check-label" for="radioDefault3">
-                                        <img style="height: 20px; width: 20px;" src="/assets/icons/Visa.png" alt="Visa">
-                                        Visa
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-6 col-sm-3">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault4">
-                                    <label class="form-check-label" for="radioDefault4">
-                                        <img style="height: 20px; width: 20px;" src="/assets/icons/GooglePay.png"
-                                            alt="GooglePay">
-                                        Pay
-                                    </label>
-                                </div>
+                            <div class="ettevõte_container" style="display: none;">
+                                <p>Ettevõte:</p>
+                                <input type="text" class="form-control" placeholder="Ettevõte nimi">
+                                <input type="text" class="form-control" placeholder="Ettevõte asukoht">
+                                <input type="text" class="form-control" placeholder="Ees nimi">
+                                <input type="text" class="form-control" placeholder="Perekonna nimi">
+                                <input type="text" class="form-control" placeholder="Telefoni number">
+                                <input type="text" class="form-control" placeholder="Meil">
+                                <input type="text" class="form-control" placeholder="Posti indeks">
                             </div>
                         </div>
-                    </div>
-                    <div class="pay">
-                        <button class="btn btn-primary">Maksa</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Script -->
+    <script>
+        const eraisikButton = document.querySelector('.eraisik_button');
+        const ettevoteButton = document.querySelector('.ettevõte_button');
+        const eraisikContainer = document.querySelector('.eraisik_container');
+        const ettevoteContainer = document.querySelector('.ettevõte_container');
+
+        eraisikButton.addEventListener('click', function () {
+            eraisikContainer.style.display = 'block';
+            ettevoteContainer.style.display = 'none';
+        });
+
+        ettevoteButton.addEventListener('click', function () {
+            eraisikContainer.style.display = 'none';
+            ettevoteContainer.style.display = 'block';
+        });
+    </script>
     <!--Bootstrap script link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
