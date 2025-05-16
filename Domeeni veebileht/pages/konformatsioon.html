@@ -29,7 +29,6 @@
         .conformation_container_content {
             border: 1px solid #dee2e6;
             border-radius: 5px;
-            min-height: 500px;
             padding-top: 20px;
             padding-left: 32px;
             padding-right: 32px;
@@ -49,6 +48,11 @@
 
         .text_container {
             margin-top: 50px;
+        }
+
+        .button_row {
+            width: 100%;
+            max-width: 700px;
         }
     </style>
 </head>
@@ -108,13 +112,31 @@
                             </p>
                             <p>
                                 Saate laadida alla tšekki ka kohe siit: <br>
-                                <a class="btn btn-secondary" role="button"><img style="height: 20px; width: 20px;" src="/assets/icons/pdf.png" alt="pdf">MyDomain_1234567.pdf</a>
+                                <a class="btn btn-secondary" role="button"><img style="height: 20px; width: 20px;"
+                                        src="/assets/icons/pdf.png" alt="pdf">MyDomain_1234567.pdf</a>
                             </p>
                         </div>
-                        <div class="buttons_container">
-                            <button class="btn btn-primary">Tagasi Avalehele</button>
-                            <button class="btn btn-primary">Osta Veel</button>
-                            <button class="btn btn-primary">Mine domeeni haldama</button>
+                        <div class="buttons_container d-flex justify-content-center">
+                            <div class="row button_row gx-3">
+                                <div class="col-12 col-md">
+                                    <button class="btn btn-primary w-100 mb-3 mb-md-0"
+                                        onclick="window.location.href='../index.html';">
+                                        Tagasi Avalehele
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <button class="btn btn-primary w-100 mb-3 mb-md-0"
+                                        onclick="window.location.href='valimine.html';">
+                                        Osta Veel
+                                    </button>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <button class="btn btn-primary w-100"
+                                        onclick="window.location.href='domeenid.html';">
+                                        Mine domeeni haldama
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </center>
                 </div>
