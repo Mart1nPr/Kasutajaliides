@@ -82,6 +82,10 @@
         .form-control {
             margin-top: 5px;
         }
+
+        .maksa_button {
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -237,9 +241,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pay">
-                                <button class="btn btn-primary" onclick="window.location.href='konformatsioon.html';">Maksa</button>
-                            </div>
                         </div>
                     </div>
                     <!-- Right column -->
@@ -250,22 +251,27 @@
                             <button class="ettevõte_button btn btn-primary">Ettevõte</button>
                             <div class="eraisik_container" style="display: block;">
                                 <p>Eraisik:</p>
-                                <input type="text" class="form-control" placeholder="Ees nimi">
-                                <input type="text" class="form-control" placeholder="Perekonna nimi">
-                                <input type="text" class="form-control" placeholder="Telefoni number">
-                                <input type="text" class="form-control" placeholder="Meil">
-                                <input type="text" class="form-control" placeholder="Posti indeks">
+                                <input type="text" class="form-control" placeholder="Eesnimi *">
+                                <input type="text" class="form-control" placeholder="Perekonnanimi *">
+                                <input type="text" class="form-control" placeholder="Telefoni number *">
+                                <input type="email" class="form-control" placeholder="Meil *">
+                                <input type="text" class="form-control" placeholder="Aadress *">
+                                <input type="text" class="form-control" placeholder="Linn *">
+                                <input type="text" class="form-control" placeholder="Postiindeks *">
                             </div>
                             <div class="ettevõte_container" style="display: none;">
                                 <p>Ettevõte:</p>
-                                <input type="text" class="form-control" placeholder="Ettevõte nimi">
-                                <input type="text" class="form-control" placeholder="Ettevõte asukoht">
-                                <input type="text" class="form-control" placeholder="Ees nimi">
-                                <input type="text" class="form-control" placeholder="Perekonna nimi">
-                                <input type="text" class="form-control" placeholder="Telefoni number">
-                                <input type="text" class="form-control" placeholder="Meil">
-                                <input type="text" class="form-control" placeholder="Posti indeks">
+                                <input type="text" class="form-control" placeholder="Ettevõtte nimi *">
+                                <input type="text" class="form-control" placeholder="Kontaktisiku eesnimi *">
+                                <input type="text" class="form-control" placeholder="Kontaktisiku perekonnanimi *">
+                                <input type="text" class="form-control" placeholder="Telefoni number *">
+                                <input type="email" class="form-control" placeholder="Meil *">
+                                <input type="text" class="form-control" placeholder="Aadress *">
+                                <input type="text" class="form-control" placeholder="Linn *">
+                                <input type="text" class="form-control" placeholder="Postiindeks *">
                             </div>
+                            <button class="maksa_button btn btn-primary w-100"
+                                onclick="window.location.href='konformatsioon.html';">Maksa</button>
                         </div>
                     </div>
                 </div>
