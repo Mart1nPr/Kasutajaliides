@@ -31,6 +31,21 @@
     /* height changer */
 }
 
+.full_container {
+    margin-top: 185px;
+    /* height changer */
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    min-height: 500px;
+}
+
+.full_container_content {
+    padding-top: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+}
+
 .right_container {
     border: 1px solid #dee2e6;
     border-radius: 5px;
