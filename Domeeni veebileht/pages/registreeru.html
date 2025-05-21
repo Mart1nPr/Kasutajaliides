@@ -9,8 +9,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/global.css">
+    <!-- Style -->
     <style>
-        /* Stiil */
+        .content_container {
+            margin-top: 185px;
+            /* height changer */
+            max-width: 500px;
+        }
     </style>
 </head>
 
@@ -35,8 +40,8 @@
                         <a class="about nav-link" href="meist.html">Meist</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" aria-current="page" href="" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active" aria-current="page" href="" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Konto
                         </a>
                         <ul class="konto dropdown-menu">
@@ -49,14 +54,33 @@
         </div>
     </nav>
     <!-- Content -->
-    <div class="main-container container-fluid">
-        <div class="sub-container container-lg">
-            <!-- Sisu -->
+    <div class="container-fluid main-container">
+        <div class="container-lg sub-container">
+            <div class="container-sm content_container">
+                <h3>Registreeru</h3>
+                <form action="/register" method="POST">
+                    <div class="input-group mb-3">
+                        <input type="text" name="username" class="form-control" placeholder="Kasutaja nimi" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Meil" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" name="password" class="form-control" placeholder="Parool" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" name="confirm_password" class="form-control"
+                            placeholder="Parooli kinnitus" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary me-2">Loo konto</button>
+                    <a href="/" class="btn btn-primary">Tagasi</a>
+                </form>
+            </div>
         </div>
     </div>
     <!-- Script -->
     <script>
-        
+
     </script>
     <!--Bootstrap script link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
